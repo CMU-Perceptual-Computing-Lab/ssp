@@ -1,4 +1,7 @@
-# [Towards Social Artificial Intelligence: Nonverbal Social Signal Prediction in A Triadic Interaction](http://domedb.perception.cs.cmu.edu/ssp.html)
+# [Towards Social Artificial Intelligence: Nonverbal Social Signal Prediction in A Triadic Interaction (CVPR Oral)](http://domedb.perception.cs.cmu.edu/ssp.html)
+
+![Teaser Image](https://github.com/jhugestar/jhugestar.github.io/blob/master/img/cvpr19_ssp.gif)
+
 
 Current version provides: 
 - Haggling dataset from [Panoptic Studio](http://domedb.perception.cs.cmu.edu/index.html)
