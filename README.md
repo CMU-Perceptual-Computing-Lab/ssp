@@ -11,15 +11,23 @@ Current version provides:
 - PyOpenGL
 - freeglut (use `sudo apt-get install freeglut3-dev` for ubuntu users)
 
-## Download Pre-trained model
+## Download Processed Haggling Data
 
 - Run the following script to download processed haggling dataset (4.7GB)
 ```
 sh ./scripts/download_haggling.sh
 ```
-- Each pkl file has information for each haggling game, with seller/buyer and winner/loser information
-- This data should contain 3D body, 3D face, 3D hand, speaking annotation
+- Each pkl file has information for each haggling game including 3D body, 3D face, 3D hand, speaking annotation for all three people
 - Speaking status annotation is in a binary form (0 or 1)
+
+## Training/Testing Split
+- The following sequences are testing set:
+```
+'170221_haggling_b1','170221_haggling_b2','170221_haggling_b3','170228_haggling_b1','170228_haggling_b2','170228_haggling_b3'
+```
+- All others are training set
+- No subject appears in both training and testing set. They are completely seperate
+
 
 ## Download Raw Data (with HD videos)
 
