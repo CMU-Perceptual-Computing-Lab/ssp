@@ -1,5 +1,7 @@
 set -ex
 
+#About 4.7GB in total
+
 mkdir -p data
 cd data
 mkdir -p haggling
