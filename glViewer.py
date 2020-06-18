@@ -2613,8 +2613,6 @@ def drawbody_jointAdam(joints,  color, normal=None, ignore_root=False):
     glEnd()
 
 
-
-
 def drawbody_jointSpin49(joints,  color, normal=None, ignore_root=False):
 
     skelSize = 10
@@ -2634,8 +2632,6 @@ def drawbody_jointSpin49(joints,  color, normal=None, ignore_root=False):
                 [14,2], [2,1], [1,0]
                 ]
     link_spin24 = np.array(link_spin24) + 25
-
-
 
     #Visualize Joints
     glColor3ub(color[0], color[1], color[2])
@@ -3799,10 +3795,9 @@ def demo_panoptic_data_haggling():
     ##read face
     seqPath = 'data/haggling/panopticDB_face_pkl_hagglingProcessed/' +fileName
     motionData = pickle.load( open( seqPath, "rb" ) , encoding='latin1')
-    #setFace([motionData['subjects'][0]['face70'], motionData['subjects'][1]['face70'], motionData['subjects'][2]['face70']])
-
+    setFace([motionData['subjects'][0]['face70'], motionData['subjects'][1]['face70'], motionData['subjects'][2]['face70']])
     ##Compute face normal
-    #setFaceNormal([motionData['subjects'][0]['normal'], motionData['subjects'][1]['normal'], motionData['subjects'][2]['normal']])
+    setFaceNormal([motionData['subjects'][0]['normal'], motionData['subjects'][1]['normal'], motionData['subjects'][2]['normal']])
 
     ##read hand
     seqPath = 'data/haggling/panopticDB_hand_pkl_hagglingProcessed/' +fileName
@@ -3814,13 +3809,12 @@ def demo_panoptic_data_haggling():
         setHand_right([motionData['hand_right'][0]['hand21'], motionData['hand_right'][1]['hand21'], motionData['hand_right'][2]['hand21']])
 
     #read speech
-    
-    seqPath = 'data/haggling/panopticDB_pkl_speech_hagglingProcessed/' +fileName
+    seqPath = 'data/haggling/panopticDB_speech_pkl_hagglingProcessed/' +fileName
     motionData = pickle.load( open( seqPath, "rb" ) , encoding='latin1')
     setSpeech([motionData['speechData'][0], motionData['speechData'][1], motionData['speechData'][2]])
 
     #read body
-    seqPath = 'data/haggling/panopticDB_pkl_hagglingProcessed/' +fileName
+    seqPath = 'data/haggling/panopticDB_body_pkl_hagglingProcessed/' +fileName
     motionData = pickle.load( open( seqPath, "rb" ) , encoding='latin1')
     setSkeleton([motionData['subjects'][0]['joints19'], motionData['subjects'][1]['joints19'], motionData['subjects'][2]['joints19']])
 

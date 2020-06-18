@@ -27,6 +27,10 @@ sh ./scripts/download_haggling.sh
 ```
 python glViewer.py
 ```
+- mouseLeft: view rotation changes
+- mouseRight: zoom changes
+- shift+ mouseLeft: view pan
+- f: toggle floor drawing
 
 ## License
 [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
