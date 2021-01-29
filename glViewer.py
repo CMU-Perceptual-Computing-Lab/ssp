@@ -3025,8 +3025,8 @@ def drawbody_joint22(joints,  color, normal=None, ignore_root=False):
 
 
 # The following is for drawbody_joint73 (Holden's format)
-sys.path.append('../motion/')
-from Quaternions import Quaternions
+# sys.path.append('../motion/')
+# from Quaternions import Quaternions
 
 # skel_list is a list of skeletonElement
 # each skeletonElement: (73,frameNum)
@@ -4020,7 +4020,7 @@ def ComputeNormal_gpu(vertices, trifaces):
 # - 'normal': (frames, 11510, 3)
 # - 'f': (22800,3)
 # - 'centers': (frames,3)
-from modelViewer.batch_lbs import batch_rodrigues
+# from modelViewer.batch_lbs import batch_rodrigues
 
 
 import scipy.io as sio
@@ -4915,7 +4915,6 @@ def renderscene():
 #
 #     # cmd = "cd /home/hjoo/temp/render_general; ffmpeg -r 30 -f image2 -i scene_%08d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p ../test1.mp4"
 #     # subprocess.call(cmd,shell=True)
-
 
 
 # def init_gl_MTC_cameraView(bSaveToFile = False):

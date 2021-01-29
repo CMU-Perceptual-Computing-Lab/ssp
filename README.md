@@ -57,7 +57,7 @@ python glViewer.py
 
 ## Citation
 ```
-@inproceedings{joo2019towards,
+@inproceedings{joo2019ssp,
   title={Towards Social Artificial Intelligence: Nonverbal Social Signal Prediction in A Triadic Interaction},
   author={Joo, Hanbyul and Simon, Tomas and Cikara, Mina and Sheikh, Yaser},
   booktitle={CVPR},
